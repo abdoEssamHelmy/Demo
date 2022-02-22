@@ -1,0 +1,15 @@
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Works\Demo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.deps.json
+E:\Works\Demo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+E:\Works\Demo\DataAccessLayer\bin\Debug\net5.0\ref\DataAccessLayer.dll
+E:\Works\Demo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+E:\Works\Demo\DataAccessLayer\bin\Debug\net5.0\Models.dll
+E:\Works\Demo\DataAccessLayer\bin\Debug\net5.0\Models.pdb
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
+E:\Works\Demo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb

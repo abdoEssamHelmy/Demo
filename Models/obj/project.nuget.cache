@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ix6qtRU7AbcxCJIKt4M3eDI1n/+lUm/wjMWdyckvnWmlGNTaQP2bTmJp5uQvW38PMGa+GNCqk2RYgArcN+SuFQ==",
+  "success": true,
+  "projectFilePath": "E:\\Works\\Demo\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TUBA\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\TUBA\\.nuget\\packages\\microsoft.identitymodel.logging\\6.16.0\\microsoft.identitymodel.logging.6.16.0.nupkg.sha512",
+    "C:\\Users\\TUBA\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.16.0\\microsoft.identitymodel.tokens.6.16.0.nupkg.sha512",
+    "C:\\Users\\TUBA\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

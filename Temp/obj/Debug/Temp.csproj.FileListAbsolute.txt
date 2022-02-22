@@ -1,0 +1,13 @@
+E:\Works\Demo\Temp\bin\Debug\Temp.exe.config
+E:\Works\Demo\Temp\bin\Debug\Temp.exe
+E:\Works\Demo\Temp\bin\Debug\Temp.pdb
+E:\Works\Demo\Temp\bin\Debug\EntityFramework.dll
+E:\Works\Demo\Temp\bin\Debug\EntityFramework.SqlServer.dll
+E:\Works\Demo\Temp\bin\Debug\EntityFramework.xml
+E:\Works\Demo\Temp\bin\Debug\EntityFramework.SqlServer.xml
+E:\Works\Demo\Temp\obj\Debug\Temp.csproj.SuggestedBindingRedirects.cache
+E:\Works\Demo\Temp\obj\Debug\Temp.csproj.CoreCompileInputs.cache
+E:\Works\Demo\Temp\obj\Debug\Temp.csproj.CopyComplete
+E:\Works\Demo\Temp\obj\Debug\Temp.exe
+E:\Works\Demo\Temp\obj\Debug\Temp.pdb
+E:\Works\Demo\Temp\obj\Debug\Temp.csproj.AssemblyReference.cache
