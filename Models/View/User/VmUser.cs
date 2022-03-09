@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.View
+namespace Models.View.User
 {
-    public class CurrentLogin
+    public class VmUser
     {
         public int Id { get; set; }
         public string UserName { get; set; }
-        public int MerchantId { get; set; }
-        public List<string> Roles { get; set; }
     }
 }

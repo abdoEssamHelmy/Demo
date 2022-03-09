@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Business.Interfaces;
 using DataAccessLayer.Interfaces;
+using Models.Data;
 using Models.View;
 using System;
 using System.Collections.Generic;
@@ -29,14 +30,7 @@ namespace Business
             var User = await UnitOfWork.UserRepository.GetLogin(Request.UserName, Request.Password);
             if(User == null)
                 return GResponse<LoginResponse>.CreateFailure("InvalidLogin");
-            try
-            {
-                var userRR = await UnitOfWork.UserRoleRepository.GetAllAsync();
-            }
-            catch(Exception ex)
-            {
-
-            }
+            
             #region Generate Claims
             List<Claim> Claims = new List<Claim>();
             foreach (var UserRoles in User.UserRoles)
@@ -46,6 +40,7 @@ namespace Business
 
             Claims.Add(new Claim(ClaimTypes.Name, User.UserName));
             Claims.Add(new Claim("__Id", $"{User.Id}"));
+            Claims.Add(new Claim("__MerchantId", $"{User.MerchantId}"));
             #endregion
             return GResponse<LoginResponse>.Create(new LoginResponse()
             {
@@ -53,6 +48,11 @@ namespace Business
                 Login = Mapper.Map<CurrentLogin>(User)
             }, "Success");            
 
+        }
+
+        public async Task<List<User>> Search(string SearchValue)
+        {
+            return await UnitOfWork.UserRepository.Search(SearchValue);
         }
     }
 }

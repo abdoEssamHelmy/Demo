@@ -51,7 +51,7 @@ namespace Business
                 List<Claim> Claims = new List<Claim>();
                 Claims.AddRange(ClaimsIdentity.FindAll(r => r.Type == ClaimTypes.Role));
                 Claims.Add(new Claim(ClaimTypes.Name, ClaimsIdentity.FindFirst(r => r.Type == ClaimTypes.Name).Value));
-                Claims.Add(new Claim(ClaimTypes.Email, ClaimsIdentity.FindFirst(r => r.Type == ClaimTypes.Email).Value));
+               
                 foreach (var Claim in ClaimsIdentity.FindAll(r => r.Type.StartsWith("__")))
                 {
                     Claims.Add(Claim);

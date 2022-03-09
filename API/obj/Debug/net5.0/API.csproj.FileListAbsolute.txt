@@ -107,3 +107,5 @@ E:\Works\Demo\API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 E:\Works\Demo\API\bin\Debug\net5.0\System.Text.Encodings.Web.dll
 E:\Works\Demo\API\bin\Debug\net5.0\System.Text.Json.dll
 E:\Works\Demo\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cs
+E:\Works\Demo\API\bin\Debug\net5.0\Castle.Core.dll
+E:\Works\Demo\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll

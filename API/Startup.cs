@@ -23,6 +23,8 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Models.AppConfig;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Models.Providers;
+using API.Provider;
 
 namespace API
 {
@@ -49,6 +51,7 @@ namespace API
             services.RegisterDataAccessLayer(_config.DBConfig.ConnectionString);
             services.AddTransient<IActionContextAccessor, ActionContextAccessor>();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<IIdentityProvider, HttpIdentityProvider>();
             services.AddSingleton<ILoggerProvider>(sp =>
             {
                 var functionDependencyContext = DependencyContext.Load(typeof(Startup).Assembly);
@@ -111,30 +114,31 @@ namespace API
 
                 options.EnableAnnotations();
 
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "My API",
+                    Version = "v1"
+                });
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    Name = "Authorization",
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "Basic",
                     In = ParameterLocation.Header,
-                    Description = "API Key Authorization along with paramater encryption"
+                    Description = "Please insert JWT with Bearer into field",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
                 });
-                options.DescribeAllParametersInCamelCase();
-
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement
-                    {
-                        {
-                              new OpenApiSecurityScheme
-                                {
-                                    Reference = new OpenApiReference
-                                    {
-                                        Type = ReferenceType.SecurityScheme,
-                                        Id = "basic"
-                                    }
-                                },
-                                Array.Empty<string>()
-                        }
-                    });
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                {
+                     new OpenApiSecurityScheme
+                     {
+                       Reference = new OpenApiReference
+                       {
+                         Type = ReferenceType.SecurityScheme,
+                         Id = "Bearer"
+                       }
+                      },
+                      new string[] { }
+                    }
+              });
 
                 // Set the comments path for the Swagger JSON and UI.
                 /*

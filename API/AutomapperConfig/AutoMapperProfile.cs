@@ -1,5 +1,6 @@
 ﻿using Models.Data;
 using Models.View;
+using Models.View.User;
 using System;
 using System.Linq;
 namespace APIs.AutoMapperConfig
@@ -11,7 +12,13 @@ namespace APIs.AutoMapperConfig
             #region User
             CreateMap<User, CurrentLogin>()
                  .ForMember(des => des.Roles, opt => opt.MapFrom(s => s.UserRoles.Select(r=>r.Role.Name)));
+
+            CreateMap<User, VmUser>();
+               
             #endregion
+
+
+
 
         }
     }

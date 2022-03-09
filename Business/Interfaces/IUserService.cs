@@ -1,4 +1,5 @@
-﻿using Models.View;
+﻿using Models.Data;
+using Models.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace Business.Interfaces
     public interface IUserService
     {
         Task<GResponse<LoginResponse>> Login(LoginRequest Request);
+        Task<List<User>> Search(string SearchValue);
     }
 }
