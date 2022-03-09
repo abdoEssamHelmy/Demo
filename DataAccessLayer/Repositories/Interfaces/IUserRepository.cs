@@ -11,5 +11,6 @@ namespace DataAccessLayer.Repositories.Interfaces
     public interface IUserRepository : IGenericRepository<User>
     {
         Task<User> GetLogin(string UserName, string Password);
+        Task<List<User>> Search(string SearchValue);
     }
 }
